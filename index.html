@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador Escolar - Seu Sistema de Gestão Escolar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #ca6303;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            background-color: #ca6303;
+            cursor: pointer;
+        }
+
+        .container {
+            padding: 40px 60px;
+            width: 100%;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .section img {
+            max-width: 40%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-text {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .section h3 {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .section h3::before {
+            content: 'ℹ️';
+            font-size: 1.2rem;
+            margin-right: 10px;
+            color: #ca6303;
+        }
+
+        .section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .container button {
+            width: auto;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            background-color: #ca6303;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .container button:hover {
+            background-color: #e07216;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            .section {
+                flex-direction: column;
+            }
+
+            .section img {
+                max-width: 80%;
+                margin-bottom: 20px;
+            }
+
+            .section-text {
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="IMAGENS/LOGO LARANJA.jpg" alt="logoinicial" style="max-width: 250px;">
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre Nós</a>
+        <a href="contato.html">Entre em Contato</a>
+        <a href="download.html">Download</a>
+    </nav>
+
+    <div class="container">
+        <!-- Seção 1: Bem-vindo ao Gerenciamento Escolar -->
+        <div class="section">
+            <img src="IMAGENS/primeira imagem.png" alt="Bem-vindo ao Gerenciamento Escolar">
+            <div class="section-text">
+                <h3>Bem-vindo ao Gerenciador Escolar</h3>
+                <p>Nosso aplicativo de gerenciamento escolar é a solução ideal para simplificar a administração e a comunicação nas escolas. Desenvolvido com a mais alta tecnologia, ele oferece uma plataforma centralizada onde alunos, professores e administradores podem interagir e gerenciar atividades escolares de forma eficiente.</p>
+            </div>
+        </div>
+
+        <!-- Seção 2: Motivações para a Implementação -->
+        <div class="section">
+            <img src="IMAGENS/ESCOLA MENINA MAO LEVANTADA.jpg" alt="Motivações para Implementação">
+            <div class="section-text">
+                <h3>Motivações para a Implementação</h3>
+                <p>A gestão de horários escolares é fundamental para garantir a alocação eficiente dos recursos da escola. Nosso sistema automatizado visa otimizar a alocação de professores e melhorar a comunicação entre todas as partes envolvidas, resolvendo ineficiências e melhorando a qualidade educacional.</p>
+            </div>
+        </div>
+
+        <!-- Seção 3: Vantagens -->
+        <div class="section">
+            <img src="IMAGENS/menina vantagens provavel.png" alt="Vantagens do Sistema">
+            <div class="section-text">
+                <h3>Vantagens</h3>
+                <p>Nosso sistema facilita a comunicação, proporcionando um ambiente colaborativo em que cada pessoa se sente valorizada e motivada. Além disso, ele melhora a organização interna da escola, reduzindo o tempo gasto em tarefas administrativas e aumentando a produtividade de todos os funcionários.</p>
+                <a href="sobre.html">
+                    <button>Saiba mais</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Aghenes - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>
